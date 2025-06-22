@@ -3,7 +3,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/status-active-success?style=flat-square" />
   <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/made%20with-React%20%26%20Flask-1f425f.svg?style=flat-square"/>
+  <img src="https://img.shields.io/badge/backend-SpringBoot-6db33f?style=flat-square" />
+  <img src="https://img.shields.io/badge/frontend-React-blue?style=flat-square" />
 </p>
 
 <p align="center">
@@ -14,9 +15,10 @@
 
 ## 🚀 Proje Hakkında
 
-**Şehrin Hikayesi**, kullanıcıların şehir haritası üzerinde anılarını kaydedebileceği, diğer kullanıcıların anılarını görebileceği ve bu içeriklere beğeni/yorum yapabileceği interaktif bir web uygulamasıdır.
+**Şehrin Hikayesi**, kullanıcıların şehir haritası üzerinde anılarını konum bazlı kaydedebileceği, diğer kullanıcıların anılarını görüntüleyip beğeni ve yorum bırakabileceği interaktif bir web uygulamasıdır.  
+Bu uygulama **Spring Boot (Java)** ve **React** teknolojileriyle geliştirilmiştir.
 
-> 🚩 Amaç: Dijital ortamda şehir anılarını canlı tutmak ve kolektif hafıza oluşturmak.
+> 🎯 Hedef: Şehirlerin sokaklarında saklı anıları dijital ortama taşımak ve kolektif bir hafıza oluşturmak.
 
 ---
 
@@ -26,29 +28,31 @@
 |------------------|----------------|-------------|
 | ![map](https://via.placeholder.com/300x200.png?text=Map+Page) | ![post](https://via.placeholder.com/300x200.png?text=Add+Post) | ![comment](https://via.placeholder.com/300x200.png?text=Comments) |
 
-> Görselleri proje tamamlandığında buraya koyabilirsin.
+> *Bu görselleri kendi ekran görüntülerinle değiştirmeyi unutma.*
 
 ---
 
 ## 🛠️ Kullanılan Teknolojiler
 
-### Frontend:
-- ⚛️ React
-- 🎨 Tailwind CSS
-- 🗺️ Leaflet.js (Harita)
-- 📦 Axios (API bağlantısı)
+### 🖥️ Frontend
+- React
+- Tailwind CSS
+- Leaflet.js (Harita)
+- Axios
 
-### Backend:
-- 🐍 Flask
-- 🔒 JWT ile kimlik doğrulama
-- 🧾 RESTful API
-- 🗃️ PostgreSQL (veri tabanı)
+### ⚙️ Backend
+- Java 17+
+- Spring Boot
+- Spring Security (JWT ile kimlik doğrulama)
+- JPA + Hibernate
+- PostgreSQL
 
 ---
 
 ## ⚙️ Kurulum Adımları
 
-### 1. Depoyu klonla:
+### 1️⃣ Depoyu Klonla
+
 ```bash
 git clone https://github.com/erogluusamett/SehrinHikayesi.git
 cd SehrinHikayesi
