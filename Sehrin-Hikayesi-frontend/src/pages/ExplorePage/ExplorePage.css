@@ -1,0 +1,48 @@
+.explore-container {
+    padding: 20px;
+    background-color: #777;        /* ✅ Uyumlu arka plan */
+    min-height: 100vh;
+    color: #1C2C48;                /* ✅ Ana yazı rengi */
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Başlık */
+.explore-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color: #1C2C48;
+}
+
+/* Alt başlık / açıklama */
+.subtext {
+    font-weight: normal;
+    color: #333333;                /* ✅ Daha koyu gri tonu */
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+/* Grid görünümü */
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+/* Her görsel kutusu */
+.explore-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Hafif gölge */
+    transition: transform 0.2s ease;
+}
+
+/* Hover efekti */
+.explore-item img:hover {
+    transform: scale(1.02);
+}

@@ -1,0 +1,221 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    width: 80vw; /* Ekranın %80'ini kaplasın - daha kompakt */
+    max-width: 1400px; /* Maksimum genişlik daha makul bir değere ayarlandı */
+    height: 80vh; /* Ekranın %80'i yükseklik */
+    max-height: 90vh;
+    display: flex;
+    background: #121212;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+/* SOL: GÖRSEL ALANI */
+.modal-left {
+    flex: 1.5; /* Daha dengeli bir oran için 2'den 1.5'e düşürüldü */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Hafif padding eklendi */
+    overflow: hidden;
+}
+
+.modal-left img {
+    max-width: 98%;
+    max-height: 98%;
+    object-fit: contain; /* Görsel oranını koruyarak kaplar */
+    display: block;
+    margin: 0 auto; /* Ortalama için */
+}
+
+/* SAĞ: METİN VE YORUM ALANI */
+.modal-right {
+    flex: 1; /* Sağ alan görsel alanının yarısı kadar yer kaplar */
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow-y: auto; /* İçerik fazla olursa dikey scroll çıksın */
+}
+
+/* X Butonu */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10; /* Üstte görünsün */
+}
+
+/* ÜST BİLGİLER */
+.post-meta,
+.post-author,
+.post-description {
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+.post-meta {
+    font-size: 15px;
+    color: #bbb;
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* BEĞENİ & YORUM */
+.like-comment-bar {
+    font-size: 22px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.interaction-counts {
+    margin: 10px 0;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.divider {
+    margin: 0 8px;
+    color: #666;
+}
+
+.clickable-count {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #00aced;
+}
+
+.clickable-count:hover {
+    color: #60ccff;
+}
+
+/* YORUM GİRİŞİ */
+.comment-input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.comment-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 6px 0 0 6px;
+    font-size: 15px;
+}
+
+.comment-send {
+    background-color: #1d72b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    font-size: 15px;
+}
+
+.comment-send:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+/* YORUM LİSTESİ */
+.comment-list {
+    margin-top: 15px;
+    font-size: 14px;
+    max-height: 250px; /* Yorum listesi için daha fazla alan */
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.comment-item {
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+.comment-username {
+    font-weight: bold;
+    color: #00aced;
+    margin-right: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment-username:hover {
+    text-decoration: underline;
+}
+
+/* BEĞENENLER MODALI */
+.likers-popup {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+    z-index: 999;
+    width: 250px;
+}
+
+.likers-popup ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.likers-popup li {
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* MOBİL */
+@media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column;
+        width: 95%;
+        height: 95%;
+    }
+
+    .modal-left {
+        height: 55%; /* Mobilde görsel ve yorum alanı daha dengeli */
+        flex: none;
+    }
+
+    .modal-right {
+        height: 45%; /* Mobilde yorum alanı daha geniş */
+        flex: none;
+        overflow-y: auto;
+    }
+}

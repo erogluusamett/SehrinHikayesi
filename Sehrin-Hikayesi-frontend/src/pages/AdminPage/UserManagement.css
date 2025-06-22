@@ -1,0 +1,115 @@
+.user-management {
+    background: #777;
+    padding: 40px;
+    border-radius: 8px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1C2C48;
+}
+
+/* Başlık */
+.user-management h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1C2C48;
+    border-bottom: 2px solid #1C2C48;
+    padding-bottom: 10px;
+}
+
+/* Arama kutusu */
+.search-box {
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #1C2C48;
+    font-size: 15px;
+}
+
+.search-box::placeholder {
+    color: #666;
+}
+
+/* Tablo görünümü */
+.user-management table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #777;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Hücreler */
+th, td {
+    padding: 14px 12px;
+    border: 1px solid #999;
+    text-align: left;
+    color: #1C2C48;
+    font-size: 15px;
+}
+
+/* Başlık */
+th {
+    background-color: #f0f0f0;
+    color: #1C2C48;
+    font-weight: bold;
+}
+
+/* Satırlar */
+tr {
+    background-color: #dddddd;
+}
+
+tr:hover {
+    background-color: #cfcfcf;
+}
+
+/* Sil Butonu */
+.delete-btn {
+    padding: 6px 14px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Sayfalama */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    background-color: #444;
+    border: 1px solid #555;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination button:hover {
+    background-color: #555;
+}
+
+.pagination button.active {
+    background-color: #1C2C48;
+    color: white;
+    font-weight: bold;
+    border-color: #1C2C48;
+}

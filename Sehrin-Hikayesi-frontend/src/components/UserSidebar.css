@@ -1,0 +1,115 @@
+.user-sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #777; /* ✅ arka plan */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-right: 1px solid #666;
+    z-index: 1000;
+    font-weight: bold; /* ✅ Sidebar genel yazılar kalın */
+}
+
+.user-sidebar .brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 26px;
+    color: #1C2C48; /* ✅ yazı rengi */
+    margin-bottom: 40px;
+    padding-left: 10px;
+    font-weight: bold; /* ✅ Marka adı da kalın */
+
+}
+
+.user-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #1C2C48; /* ✅ yazı rengi */
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    font-weight: bold; /* ✅ Menü metinleri kalın */
+
+}
+
+.user-nav-item:hover {
+    background-color: #999;
+}
+
+.user-nav-item.active {
+    font-weight: bold;
+    background-color: #999;
+}
+
+.user-nav-item i {
+    font-size: 22px;
+    color: #1C2C48; /* ✅ ikon rengi */
+}
+
+.user-profile-pic {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1C2C48;
+}
+
+/* Çıkış onayı penceresi */
+.logout-confirm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.logout-confirm-modal {
+    background-color: #f9f9f9;
+    padding: 25px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    font-weight: bold; /* ✅ Onay penceresi metni kalın */
+}
+
+.logout-confirm-modal p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #1C2C48;
+}
+
+.confirm-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.confirm-buttons .yes {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.confirm-buttons .no {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}

@@ -1,0 +1,98 @@
+.category-management {
+    background-color: #777;
+    padding: 40px;
+    border-radius: 8px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1C2C48;
+}
+
+/* Başlık */
+.category-management h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1C2C48;
+    border-bottom: 2px solid #1C2C48;
+    padding-bottom: 10px;
+}
+
+/* Form */
+.add-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.add-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f0f0f0;
+    color: #1C2C48;
+}
+
+.add-form button {
+    padding: 10px 20px;
+    background-color: #04551e; /* Yeşil (ekle butonu) */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.add-form button:hover {
+    background-color: #04551e;
+}
+
+/* Tablo */
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #777;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.category-table th,
+.category-table td {
+    padding: 14px 12px;
+    border: 1px solid #999;
+    text-align: left;
+    font-size: 15px;
+    color: #1C2C48;
+}
+
+.category-table th {
+    background-color: #f0f0f0;
+    color: #1C2C48;
+    font-weight: bold;
+}
+
+.category-table tr {
+    background-color: #dddddd;
+}
+
+.category-table tr:hover {
+    background-color: #cfcfcf;
+}
+
+/* Sil Butonu */
+.delete-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}

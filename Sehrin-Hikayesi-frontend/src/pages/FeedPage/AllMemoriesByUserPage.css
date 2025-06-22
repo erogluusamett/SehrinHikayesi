@@ -1,0 +1,30 @@
+.memories-by-user-container {
+    padding: 30px;
+    background-color: #121212;
+    color: white;
+    min-height: 100vh;
+}
+
+.memory-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.memory-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 300px;
+}
+
+.memory-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.memory-content {
+    padding: 15px;
+}

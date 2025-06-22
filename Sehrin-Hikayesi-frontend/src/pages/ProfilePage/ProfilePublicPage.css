@@ -1,0 +1,50 @@
+.profile-container {
+    padding: 30px;
+    color: white;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.profile-memories {
+    margin-top: 30px;
+}
+
+.memory-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.memory-card {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.memory-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}

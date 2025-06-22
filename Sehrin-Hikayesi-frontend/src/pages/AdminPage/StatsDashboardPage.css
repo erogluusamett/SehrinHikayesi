@@ -1,0 +1,72 @@
+.stats-dashboard {
+    background-color: #777;
+    padding: 40px;
+    border-radius: 8px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1C2C48;
+}
+
+/* Başlıklar (isteğe bağlı ekleyebilirsin) */
+.stats-dashboard h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1C2C48;
+    border-bottom: 2px solid #1C2C48;
+    padding-bottom: 10px;
+}
+
+/* Özet kartları */
+.summary-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background-color: #dddddd;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    font-size: 16px;
+    min-width: 220px;
+    color: #1C2C48;
+    font-weight: 500;
+}
+
+/* Grafik alanları */
+.chart-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.chart-box {
+    background-color: #eeeeee;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ✅ Grafik renk sabitlemesi için legend veya class bazlı örnek */
+.legend-users {
+    color: #ff4d4f;
+}
+
+.legend-stories {
+    color: #9b59b6;
+}
+
+.legend-tags {
+    color: #3498db;
+}
+
+.legend-categories {
+    color: #f1c40f;
+}
+
+.legend-other {
+    color: #1C2C48;
+}
